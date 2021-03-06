@@ -1,6 +1,5 @@
 #include "arrayitem.h"
 
-ArrayItem::ArrayItem()
-{
+ArrayItem::ArrayItem(QObject* parent): Item(parent) {
 
 }

@@ -1,6 +1,5 @@
 #include "singalitem.h"
 
-SingalItem::SingalItem()
-{
+SingalItem::SingalItem(QObject* parent) : Item(parent) {
 
 }

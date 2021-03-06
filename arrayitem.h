@@ -1,11 +1,14 @@
 #ifndef ARRAYITEM_H
 #define ARRAYITEM_H
+#include "item.h"
 
 
-class ArrayItem
-{
+class ArrayItem: public Item {
 public:
-    ArrayItem();
+    explicit ArrayItem(QObject* parent = nullptr);
+    int minLen;
+    int maxLen;
+    bool showAmount;
 };
 
 #endif // ARRAYITEM_H
