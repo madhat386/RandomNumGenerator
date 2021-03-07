@@ -87,7 +87,11 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWi
                     ArrayItem* temp = static_cast<ArrayItem*>(*it);
                     int len = getRandomInt(temp->minLen, temp->maxLen);
                     if (temp->showAmount) {
-                        stream << len << temp->endOfVal;
+                        if (ui->aAoumntNextLine->checkState() == Qt::Checked) {
+                            stream << len << "\n";
+                        } else {
+                            stream << len << " ";
+                        }
                     }
                     if (temp->isInt) {
                         //处理整数数组生成

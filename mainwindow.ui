@@ -407,6 +407,22 @@
            </item>
           </layout>
          </widget>
+         <widget class="QCheckBox" name="aAoumntNextLine">
+          <property name="geometry">
+           <rect>
+            <x>630</x>
+            <y>150</y>
+            <width>161</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>数组长度换行</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
         </widget>
        </item>
        <item>
